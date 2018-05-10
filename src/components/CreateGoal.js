@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class CreateGoal extends Component {
     render() {
         return (
-            <div>
+            <div style={{marginTop: 50}}>
                 <p>Create your goal!</p>
             </div>
         )
