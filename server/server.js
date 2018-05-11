@@ -19,6 +19,6 @@ app.use(bodyParser.json());
 
 app.use('/goal', GoalRouter);
 
-app.listen(PORT, function(){
-    console.log('Server is running on Port: ',PORT);
+app.listen(PORT, () => {
+    console.log(`Server start on Port: ${PORT}`);
 });
