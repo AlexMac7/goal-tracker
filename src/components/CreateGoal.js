@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class CreateGoal extends Component {
     constructor(props) {
@@ -25,7 +26,12 @@ class CreateGoal extends Component {
     }
     onSubmit(event) {
         event.preventDefault();
-        console.log(`Goal name is ${this.state.name} and description is ${this.state.description}`);
+        const goal = {
+            name: this.state.name,
+            port: this.state.description
+        }
+        axios.post('http://localhost:4200/goal/add', goal)
+            .then(res => console.log(res.data));
         this.setState({
             name: '',
             description: ''

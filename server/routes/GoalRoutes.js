@@ -8,7 +8,7 @@ GoalRouter.route('/add').post(function (req, res) {
     const goal = new Goal(req.body);
     goal.save()
         .then(goal => {
-            res.json('Server added successfully');
+            res.json('Goal added successfully');
         })
         .catch(err => {
             res.status(400).send("unable to save to database");
