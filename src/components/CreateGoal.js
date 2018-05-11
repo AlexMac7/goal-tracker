@@ -28,7 +28,7 @@ class CreateGoal extends Component {
         event.preventDefault();
         const goal = {
             name: this.state.name,
-            port: this.state.description
+            description: this.state.description
         }
         axios.post('http://localhost:4200/goal/add', goal)
             .then(res => console.log(res.data));
@@ -56,7 +56,7 @@ class CreateGoal extends Component {
                     </div>
                 </form>
             </div>
-        )
+        );
     }
 }
 

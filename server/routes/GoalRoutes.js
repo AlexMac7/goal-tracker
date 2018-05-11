@@ -40,7 +40,7 @@ GoalRouter.route('/update/:id').post(function (req, res) {
         else {
             // do your updates here
             goal.name = req.body.name;
-            goal.port = req.body.port;
+            goal.description = req.body.description;
 
             goal.save().then(goal => {
                 res.json('Update complete');

@@ -24,7 +24,7 @@ class App extends Component {
                                 <Link to={'/get'} className={"nav-link"}>List</Link>
                             </li>
                             <li className={"nav-item"}>
-                                <Link to={'/patch/:id'} className={"nav-link"}>Edit</Link>
+                                <Link to={'/edit/:id'} className={"nav-link"}>Edit</Link>
                             </li>
                         </ul>
                     </div>
@@ -32,7 +32,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/create' component={CreateGoal} />
                     <Route path='/get' component={GetGoal} />
-                    <Route path='/patch/:id' component={PatchGoal} />
+                    <Route path='/edit/:id' component={PatchGoal} />
                 </Switch>
             </div>
         </Router>
