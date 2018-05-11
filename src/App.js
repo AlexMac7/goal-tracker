@@ -23,9 +23,6 @@ class App extends Component {
                             <li className={"nav-item"}>
                                 <Link to={'/get'} className={"nav-link"}>List</Link>
                             </li>
-                            <li className={"nav-item"}>
-                                <Link to={'/edit/:id'} className={"nav-link"}>Edit</Link>
-                            </li>
                         </ul>
                     </div>
                 </nav>
